@@ -1,0 +1,51 @@
+body{
+    margin : 0px;
+}
+
+.logo{
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+hr{
+    display: absolute;
+    width: 390px;
+    position: absolute;
+    left: 0;
+   border: 1px solid #ffffff22;
+}
+.side-bar{
+    background-color: #111111;
+    width: 22%;
+    height: 100vh;
+    padding-left: 58px;
+    padding-top: 30px;
+}
+.menu{
+    margin-top: 120px;
+}
+.menu a{
+    text-decoration: none;
+}
+ .side-menu-list {
+
+    padding: 0px;
+
+}
+.menu ul li {
+   font-family: "Nunito Sans", sans-serif;
+   font-size: 16px;
+   list-style: none;
+   color: #ffffff;
+   display: flex;
+   gap: 12px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.menu ul li:active{
+    background-color: #ffffffa5;
+    padding: 15px;
+    width: 300px;
+    border-radius: 4px;
+}
