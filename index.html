@@ -39,15 +39,39 @@
                 <div class="right-main">
                     <div class="categories">
                         <h2 class="title">Title</h2>
-                        <button class="add-new">Add New</button>
+                        <button onclick="showAddPopup()" class="add-new">Add New</button>
                     </div>
+
+                     <!-- List test  -->
+                     <ul class="category-list" id="category-list"></ul>
+
+                     <!-- Add/Edit Popup -->
+                     <div class="overlay" id="overlay"></div>
+                     <div class="popup" id="popup">
+                         <h3 id="popup-title">Add Category</h3>
+                         <h4 id="category-name">Category Name</h4>
+                         <input type="text" id="category-input" placeholder="Enter category name">
+                         <button onclick="saveCategory()">Save Now</button>
+                     </div>
+                     
+
+                     <div class="overlay" id="delete-confirmation-overlay"></div>
+                    <div class="popup" id="delete-confirmation-popup">
+                        <h3 id="popup-title">Delete Category</h3>
+                        <h4>Are you sure you want to delete the category?</h4>
+                        <div class="btn">
+                            <button id="confirm-delete-btn">Yes</button>
+                            <button onclick="closeDeleteConfirmation()">No</button>
+                        </div>
+                    </div>
+
                 </div>
 
 
             </div>
 
     </div>        
-
+    <script src="main.js"></script>
 
 </body>
 </html>
