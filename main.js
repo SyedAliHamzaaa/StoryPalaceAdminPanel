@@ -78,3 +78,7 @@ function closePopup() {
 
 // Close popup when clicking outside of it
 document.getElementById('overlay').onclick = closePopup;
+
+
+
+// Stories js

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <title>Story Palace</title>
+</head>
+<body>
+
+    <div class="container">
+
+            <div class="side-bar">
+            
+                <div class="logo">
+
+                    <a href="index.html"><img src="images/کہانی گھر.png" alt=""></a>
+                </div>
+                <hr>
+
+                <div class="menu">
+                    <ul class="side-menu-list">
+                        <a href="index.html" class="s-list-item"><li><img src="images/dashboard_svgrepo.com.png" alt="">Dashboard</li></a>
+                        <a href="stories.html" class="s-list-item" ><li class="active-menu"><img src="images/book_svgrepo.com.png" alt="">Stories</li></a>
+                    </ul>
+                </div>    
+            </div>
+            
+            <div class="main">
+                <div class="top-bar">
+                    <img src="images/back_svgrepo.com.png" alt="">
+                    <h1>Stories</h1>
+                </div>
+
+                <div class="right-main">
+                    <div class="Edit Stories">
+                        
+                    </div>
+
+                    <form id="story-form">
+                        <div class="form-group">
+                            <label for="name-en">Story Name (English):</label>
+                            <input type="text" id="name-en" name="name-en" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name-ur">Story Name (Urdu):</label>
+                            <input type="text" id="name-ur" name="name-ur" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category:</label>
+                            <select id="category" name="category" required>
+                                <option value="">Select Category</option>
+                                <option value="Category 1">Category 1</option>
+                                <option value="Category 2">Category 2</option>
+                            </select>
+                        </div>
+                        <button type="submit">Save Changes</button>
+                        <div class="form-group">
+                            <label id="la" for="story-content">Story Content:</label>
+                            <textarea id="story-content" name="story-content" rows="6" required></textarea>
+                        </div>
+                        
+                    </form>
+                
+
+                </div>
+
+
+            </div>
+
+    </div>        
+   
+    <script src="script.js"></script>
+
+</body>
+</html>
