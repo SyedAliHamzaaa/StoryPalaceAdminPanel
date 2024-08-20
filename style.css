@@ -1,6 +1,7 @@
 body{
     margin : 0px;
     background-color:#F5F5F5;
+    font-family: "Nunito Sans", sans-serif;
     
 }
 
@@ -55,7 +56,15 @@ hr{
     width: 200px;
     border-radius: 4px;
 }
-
+.top-bar a{
+    text-decoration: none;
+    position: absolute;
+    top: 53px;
+    left: 96px;
+}
+#head-top-bar{
+    padding-left: 125px;
+}
 .top-bar h1{
     padding: 48.5px 50px;
     font-size: 24px;
@@ -65,6 +74,8 @@ hr{
 }
 .top-bar{
     background-color: #ffffff;
+    justify-content: center;
+    position:relative; 
 }
 .main{
     width: 100%;
@@ -340,6 +351,7 @@ button {
 }
 .rmstories{
     margin-top: 10px;
+    height: 580px;
 }
 .form-group {
     margin-bottom: 15px;
@@ -362,8 +374,44 @@ button {
 }
 
 .story-details {
-    border: 1px solid #ccc;
-    padding: 20px;
     border-radius: 5px;
     background-color: #f9f9f9;
+    height: 800px;
+    position: relative;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #000000;
+    padding: 20px;
+    width: 100%;
+   
+}
+.name{
+    
+    display: flex;
+    gap: 10px;
+    text-align: center;
+   
+}   
+#story-category{
+ position: absolute;
+ left: 20px;
+ top: 65px;
+ color: #FF5C00;
+ font-weight: bold;
+ font-size: 13px;
+}
+
+#edit-button {
+    background-color: none;
+}
+.btns{
+    margin-right: 80px;
+}
+.btns button{
+    background-color: #00000000;
+    width: 10px;    
+    margin-right: 20px;
 }

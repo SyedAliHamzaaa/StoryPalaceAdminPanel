@@ -33,8 +33,8 @@
             
             <div class="main">
                 <div class="top-bar">
-                    <img src="images/back_svgrepo.com.png" alt="">
-                    <h1>Stories</h1>
+                    <a href="stories.html"> <img src="images/back_svgrepo.com.png" alt=""> </a> 
+                    <h1 id="head-top-bar">Story Details</h1>
                 </div>
 
                 <div class="right-main">
@@ -43,14 +43,27 @@
                     </div>
 
                     <div id="story-details" class="story-details">
-                        <h3 id="story-name-en"></h3>
-                        <h4 id="story-name-ur"></h4>
-                        <p><strong>Category:</strong> <span id="story-category"></span></p>
-                        <p><strong>Content:</strong></p>
+                       <div class="display">
+
+                            <div class="name">
+                                <h3 id="story-name-en"></h3>
+                                <h3>-</h3>
+                                <h4 id="story-name-ur"></h4>
+                            </div>
+                            
+                            <div class="btns">
+                                
+                                <button id="edit-button"><img src="images/edit.png" alt=""></button>
+                                <button id="delete-button"><img src="images/delete.png" alt=""></button>
+                            </div>
+
+                        
+                       </div> 
+                           
+                       <p><span id="story-category"></span></p>
                         <p id="story-content"></p>
                     </div>
                     
-                    </script>
 
                 </div>
 

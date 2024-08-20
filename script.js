@@ -75,11 +75,29 @@ function viewStory(index) {
 if (window.location.pathname.includes('view.html')) {
     const index = localStorage.getItem('viewStoryIndex');
     const story = stories[index];
-    document.getElementById('story-name-en').innerText = story.nameEn;
-    document.getElementById('story-name-ur').innerText = story.nameUr;
-    document.getElementById('story-category').innerText = story.category;
-    document.getElementById('story-content').innerText = story.content;
+
+    if (story) {
+        // Display the story details
+        document.getElementById('story-name-en').innerText = story.nameEn;
+        document.getElementById('story-name-ur').innerText = story.nameUr;
+        document.getElementById('story-category').innerText = story.category;
+        document.getElementById('story-content').innerText = story.content;
+
+        // Handle the "Edit" button
+        document.getElementById('edit-button').addEventListener('click', function () {
+            editStory(index); // Reuse the existing edit function
+        });
+
+        // Handle the "Delete" button
+        document.getElementById('delete-button').addEventListener('click', function () {
+            if (confirm('Are you sure you want to delete this story?')) {
+                deleteStory(index); // Reuse the existing delete function
+                window.location.href = 'stories.html'; // Redirect back to the main page after deletion
+            }
+        });
+    }
 }
+
 
 // Function to handle deleting a story
 function deleteStory(index) {
